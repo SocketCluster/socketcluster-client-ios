@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
+		D29666701AF10CA0001828A1 /* SocketCluster.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; };
+		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
+		D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */; };
+		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
+		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; };
+		D2C1F9F81AF51F6700DB318F /* socketcluster-webwrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */; };
+		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
+		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
+		D2C1FA061AF526B200DB318F /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2C1F9F91AF51F7800DB318F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D296663E1AF0F8E5001828A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C1F9F01AF51F4700DB318F;
+			remoteInfo = SocketClusteriOSBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D29666441AF0F8E5001828A1 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Copy Files */,
+				D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Copy Files */,
+				D29666701AF10CA0001828A1 /* SocketCluster.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketClusteriOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29666571AF0F8E5001828A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "socketcluster-webwrapper.html"; sourceTree = "<group>"; };
+		D296666C1AF10C69001828A1 /* SocketCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketCluster.h; sourceTree = "<group>"; };
+		D296666D1AF10C69001828A1 /* SocketCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketCluster.m; sourceTree = "<group>"; };
+		D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClusterDelegate.h; sourceTree = "<group>"; };
+		D29666AE1AF11112001828A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketClusteriOSBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C1F9F41AF51F4700DB318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D29666431AF0F8E5001828A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */,
+				D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C1F9EE1AF51F4700DB318F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D296663D1AF0F8E5001828A1 = {
+			isa = PBXGroup;
+			children = (
+				D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */,
+				D29666AE1AF11112001828A1 /* UIKit.framework */,
+				D29666481AF0F8E5001828A1 /* SocketClusteriOS */,
+				D29666551AF0F8E5001828A1 /* SocketClusteriOSTests */,
+				D2C1F9F21AF51F4700DB318F /* SocketClusteriOSBundle */,
+				D29666471AF0F8E5001828A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D29666471AF0F8E5001828A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */,
+				D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D29666481AF0F8E5001828A1 /* SocketClusteriOS */ = {
+			isa = PBXGroup;
+			children = (
+				D29666691AF10BB2001828A1 /* Client */,
+			);
+			path = SocketClusteriOS;
+			sourceTree = "<group>";
+		};
+		D29666551AF0F8E5001828A1 /* SocketClusteriOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D29666561AF0F8E5001828A1 /* Supporting Files */,
+			);
+			path = SocketClusteriOSTests;
+			sourceTree = "<group>";
+		};
+		D29666561AF0F8E5001828A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D29666571AF0F8E5001828A1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D29666691AF10BB2001828A1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */,
+				D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */,
+				D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */,
+				D296666C1AF10C69001828A1 /* SocketCluster.h */,
+				D296666D1AF10C69001828A1 /* SocketCluster.m */,
+				D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */,
+				D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		D2C1F9F21AF51F4700DB318F /* SocketClusteriOSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D2C1F9F31AF51F4700DB318F /* Supporting Files */,
+			);
+			path = SocketClusteriOSBundle;
+			sourceTree = "<group>";
+		};
+		D2C1F9F31AF51F4700DB318F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2C1F9F41AF51F4700DB318F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D29666451AF0F8E5001828A1 /* SocketClusteriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D296665A1AF0F8E5001828A1 /* Build configuration list for PBXNativeTarget "SocketClusteriOS" */;
+			buildPhases = (
+				D29666421AF0F8E5001828A1 /* Sources */,
+				D29666431AF0F8E5001828A1 /* Frameworks */,
+				D2C1F9EB1AF51D6F00DB318F /* Resources */,
+				D29666441AF0F8E5001828A1 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C1F9FA1AF51F7800DB318F /* PBXTargetDependency */,
+			);
+			name = SocketClusteriOS;
+			productName = SocketClusteriOS;
+			productReference = D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */;
+			buildPhases = (
+				D2C1F9ED1AF51F4700DB318F /* Sources */,
+				D2C1F9EE1AF51F4700DB318F /* Frameworks */,
+				D2C1F9EF1AF51F4700DB318F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketClusteriOSBundle;
+			productName = SocketClusteriOSBundle;
+			productReference = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D296663E1AF0F8E5001828A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = TopCloud;
+				TargetAttributes = {
+					D29666451AF0F8E5001828A1 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D2C1F9F01AF51F4700DB318F = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D29666411AF0F8E5001828A1 /* Build configuration list for PBXProject "SocketClusteriOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D296663D1AF0F8E5001828A1;
+			productRefGroup = D29666471AF0F8E5001828A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D29666451AF0F8E5001828A1 /* SocketClusteriOS */,
+				D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C1F9EB1AF51D6F00DB318F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C1F9EF1AF51F4700DB318F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C1F9F81AF51F6700DB318F /* socketcluster-webwrapper.html in Resources */,
+				D2C1FA061AF526B200DB318F /* WebViewJavascriptBridge.js.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D29666421AF0F8E5001828A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */,
+				D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C1F9ED1AF51F4700DB318F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2C1F9FA1AF51F7800DB318F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */;
+			targetProxy = D2C1F9F91AF51F7800DB318F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D29666581AF0F8E5001828A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D29666591AF0F8E5001828A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D296665B1AF0F8E5001828A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D296665C1AF0F8E5001828A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2C1F9F61AF51F4700DB318F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.3;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D2C1F9F71AF51F4700DB318F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.3;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D29666411AF0F8E5001828A1 /* Build configuration list for PBXProject "SocketClusteriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29666581AF0F8E5001828A1 /* Debug */,
+				D29666591AF0F8E5001828A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D296665A1AF0F8E5001828A1 /* Build configuration list for PBXNativeTarget "SocketClusteriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D296665B1AF0F8E5001828A1 /* Debug */,
+				D296665C1AF0F8E5001828A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C1F9F61AF51F4700DB318F /* Debug */,
+				D2C1F9F71AF51F4700DB318F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D296663E1AF0F8E5001828A1 /* Project object */;
+}
