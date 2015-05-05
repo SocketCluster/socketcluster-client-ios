@@ -7,6 +7,7 @@
 //
 
 #import "SocketCluster.h"
+#import "WebViewJavascriptBridge.h"
 #import "RNDecryptor.h"
 #import "RNOpenSSLDecryptor.h"
 

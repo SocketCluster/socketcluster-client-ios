@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "WebViewJavascriptBridge.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "SocketClusterDelegate.h"
 

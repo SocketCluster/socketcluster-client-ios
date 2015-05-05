@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
-		D29666701AF10CA0001828A1 /* SocketCluster.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; };
+		D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
 		D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */; };
-		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
-		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; };
+		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
+		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
 		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
 		D2F271721AF91B6D00A6FFCB /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271641AF91B6D00A6FFCB /* RNCryptor.m */; };
@@ -33,22 +33,6 @@
 			remoteInfo = SocketClusteriOSBundle;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D29666441AF0F8E5001828A1 /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Copy Files */,
-				D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Copy Files */,
-				D29666701AF10CA0001828A1 /* SocketCluster.h in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketClusteriOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +180,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D2F2717B1AF9224300A6FFCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Headers */,
+				D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */,
+				D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		D29666451AF0F8E5001828A1 /* SocketClusteriOS */ = {
 			isa = PBXNativeTarget;
@@ -204,7 +201,7 @@
 				D29666421AF0F8E5001828A1 /* Sources */,
 				D29666431AF0F8E5001828A1 /* Frameworks */,
 				D2C1F9EB1AF51D6F00DB318F /* Resources */,
-				D29666441AF0F8E5001828A1 /* Copy Files */,
+				D2F2717B1AF9224300A6FFCB /* Headers */,
 			);
 			buildRules = (
 			);
@@ -403,7 +400,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -413,7 +412,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
