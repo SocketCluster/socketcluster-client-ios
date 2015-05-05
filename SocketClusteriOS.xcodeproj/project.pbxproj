@@ -13,10 +13,8 @@
 		D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */; };
 		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
 		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; };
-		D2C1F9F81AF51F6700DB318F /* socketcluster-webwrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */; };
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
 		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
-		D2C1FA061AF526B200DB318F /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +66,6 @@
 			files = (
 				D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */,
 				D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2C1F9EE1AF51F4700DB318F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */;
 			buildPhases = (
-				D2C1F9ED1AF51F4700DB318F /* Sources */,
-				D2C1F9EE1AF51F4700DB318F /* Frameworks */,
-				D2C1F9EF1AF51F4700DB318F /* Resources */,
+				D27D33161AF8FD890023281B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -239,16 +228,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2C1F9EF1AF51F4700DB318F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D27D33161AF8FD890023281B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C1F9F81AF51F6700DB318F /* socketcluster-webwrapper.html in Resources */,
-				D2C1FA061AF526B200DB318F /* WebViewJavascriptBridge.js.txt in Resources */,
+			);
+			inputPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "openssl enc -e -aes-256-cbc -pass pass:@F@gjoifu2fj -in $PROJECT_DIR/SocketClusteriOS/WebViewJavascriptBridge.js.txt -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/WebViewJavascriptBridge.enc\nopenssl enc -e -aes-256-cbc -pass pass:@F@gjoifu2fj -in $PROJECT_DIR/SocketClusteriOS/socketcluster-webwrapper.html -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/socketcluster-webwrapper.enc";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D29666421AF0F8E5001828A1 /* Sources */ = {
@@ -257,13 +253,6 @@
 			files = (
 				D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */,
 				D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2C1F9ED1AF51F4700DB318F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +426,7 @@
 				D2C1F9F71AF51F4700DB318F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
