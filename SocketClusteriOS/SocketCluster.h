@@ -1,6 +1,6 @@
 //
 //  SocketCluster.h
-//  SocketClusteriOSDemo
+//  SocketClusteriOS
 //
 //  Created by Lihan Li on 23/04/2015.
 //  Copyright (c) 2015 TopCloud. All rights reserved.
@@ -21,6 +21,10 @@ typedef NS_ENUM(NSInteger, SocketClusterState) {
 };
 
 
+/**
+ * The SocketCluster class defines the methods you use to interact with 
+ * SocketCluster NodeJS server
+ **/
 @interface SocketCluster : NSObject <UIWebViewDelegate>
 
 
