@@ -10,18 +10,18 @@
 		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
 		D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
+		D2B8814F1AFCF0B70059FBF9 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271641AF91B6D00A6FFCB /* RNCryptor.m */; };
+		D2B881501AFCF0C10059FBF9 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716B1AF91B6D00A6FFCB /* RNEncryptor.m */; };
+		D2B881511AFCF0C30059FBF9 /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716D1AF91B6D00A6FFCB /* RNOpenSSLCryptor.m */; };
+		D2B881521AFCF0C70059FBF9 /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271711AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m */; };
 		D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */; };
 		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
 		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
 		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
-		D2F271721AF91B6D00A6FFCB /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271641AF91B6D00A6FFCB /* RNCryptor.m */; };
 		D2F271731AF91B6D00A6FFCB /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271671AF91B6D00A6FFCB /* RNCryptorEngine.m */; };
 		D2F271741AF91B6D00A6FFCB /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271691AF91B6D00A6FFCB /* RNDecryptor.m */; };
-		D2F271751AF91B6D00A6FFCB /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716B1AF91B6D00A6FFCB /* RNEncryptor.m */; };
-		D2F271761AF91B6D00A6FFCB /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716D1AF91B6D00A6FFCB /* RNOpenSSLCryptor.m */; };
 		D2F271771AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716F1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m */; };
-		D2F271781AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271711AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,15 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F271751AF91B6D00A6FFCB /* RNEncryptor.m in Sources */,
 				D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */,
+				D2B8814F1AFCF0B70059FBF9 /* RNCryptor.m in Sources */,
 				D2F271731AF91B6D00A6FFCB /* RNCryptorEngine.m in Sources */,
-				D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */,
-				D2F271761AF91B6D00A6FFCB /* RNOpenSSLCryptor.m in Sources */,
-				D2F271721AF91B6D00A6FFCB /* RNCryptor.m in Sources */,
-				D2F271781AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m in Sources */,
+				D2B881501AFCF0C10059FBF9 /* RNEncryptor.m in Sources */,
 				D2F271741AF91B6D00A6FFCB /* RNDecryptor.m in Sources */,
 				D2F271771AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m in Sources */,
+				D2B881521AFCF0C70059FBF9 /* RNOpenSSLEncryptor.m in Sources */,
+				D2B881511AFCF0C30059FBF9 /* RNOpenSSLCryptor.m in Sources */,
+				D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,24 +399,30 @@
 		D296665B1AF0F8E5001828A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Debug;
 		};
 		D296665C1AF0F8E5001828A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /include/SocketClusteriOS/;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
 			name = Release;
 		};
