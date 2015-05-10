@@ -8,8 +8,6 @@
 
 #import "SocketCluster.h"
 #import "WebViewJavascriptBridge.h"
-#import "RNDecryptor.h"
-#import "RNOpenSSLDecryptor.h"
 
 
 @interface SocketCluster()
@@ -30,16 +28,11 @@
 {
     if (self = [super init]) {
         _webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"SocketClusteriOSBundle" withExtension:@"bundle"]];
-        NSString* filePath = [bundle pathForResource:@"socketcluster-webwrapper" ofType:@"enc"];
-        
-        NSData *passEncryptedData =[[NSData alloc] initWithContentsOfFile:filePath];
-        NSError *error;
-        NSData *decryptedData = [RNOpenSSLDecryptor decryptData:passEncryptedData withSettings:kRNCryptorAES256Settings password:@"4mU9pP8a757mgsMG" error:&error];
-        NSString * fileContents = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
-        NSURL *baseURL = [NSURL fileURLWithPath:filePath];
-        [_webView loadHTMLString:fileContents baseURL:baseURL];
-
+        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"SocketClusteriOSBundle" withExtension:@"bundle"]];        
+        NSString* htmlPath = [bundle pathForResource:@"socketcluster-webwrapper" ofType:@"html"];
+        NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
+        NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
+        [_webView loadHTMLString:appHtml baseURL:baseURL];
         self.bridge = [WebViewJavascriptBridge bridgeForWebView:_webView webViewDelegate:self handler:^(id data, WVJBResponseCallback responseCallback) {
         } resourceBundle:bundle];
         

@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D26E9AD71AFF84FC004D6E55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D26E9AD61AFF84FB004D6E55 /* README.md */; };
+		D26E9AD91AFF857F004D6E55 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */; };
+		D26E9ADA1AFF8581004D6E55 /* socketcluster-webwrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */; };
 		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
 		D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
-		D2B8814F1AFCF0B70059FBF9 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271641AF91B6D00A6FFCB /* RNCryptor.m */; };
-		D2B881501AFCF0C10059FBF9 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716B1AF91B6D00A6FFCB /* RNEncryptor.m */; };
-		D2B881511AFCF0C30059FBF9 /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716D1AF91B6D00A6FFCB /* RNOpenSSLCryptor.m */; };
-		D2B881521AFCF0C70059FBF9 /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271711AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m */; };
 		D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */; };
 		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
 		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
 		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
-		D2F271731AF91B6D00A6FFCB /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271671AF91B6D00A6FFCB /* RNCryptorEngine.m */; };
-		D2F271741AF91B6D00A6FFCB /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F271691AF91B6D00A6FFCB /* RNDecryptor.m */; };
-		D2F271771AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2716F1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D26E9AD61AFF84FB004D6E55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketClusteriOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29666571AF0F8E5001828A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "socketcluster-webwrapper.html"; sourceTree = "<group>"; };
@@ -48,22 +45,6 @@
 		D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketClusteriOSBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C1F9F41AF51F4700DB318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		D2F271621AF91B6D00A6FFCB /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
-		D2F271631AF91B6D00A6FFCB /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
-		D2F271641AF91B6D00A6FFCB /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
-		D2F271651AF91B6D00A6FFCB /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
-		D2F271661AF91B6D00A6FFCB /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
-		D2F271671AF91B6D00A6FFCB /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
-		D2F271681AF91B6D00A6FFCB /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
-		D2F271691AF91B6D00A6FFCB /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
-		D2F2716A1AF91B6D00A6FFCB /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
-		D2F2716B1AF91B6D00A6FFCB /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
-		D2F2716C1AF91B6D00A6FFCB /* RNOpenSSLCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLCryptor.h; sourceTree = "<group>"; };
-		D2F2716D1AF91B6D00A6FFCB /* RNOpenSSLCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLCryptor.m; sourceTree = "<group>"; };
-		D2F2716E1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLDecryptor.h; sourceTree = "<group>"; };
-		D2F2716F1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLDecryptor.m; sourceTree = "<group>"; };
-		D2F271701AF91B6D00A6FFCB /* RNOpenSSLEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLEncryptor.h; sourceTree = "<group>"; };
-		D2F271711AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLEncryptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +63,7 @@
 		D296663D1AF0F8E5001828A1 = {
 			isa = PBXGroup;
 			children = (
+				D26E9AD61AFF84FB004D6E55 /* README.md */,
 				D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */,
 				D29666AE1AF11112001828A1 /* UIKit.framework */,
 				D29666481AF0F8E5001828A1 /* SocketClusteriOS */,
@@ -103,7 +85,6 @@
 		D29666481AF0F8E5001828A1 /* SocketClusteriOS */ = {
 			isa = PBXGroup;
 			children = (
-				D2F271531AF917DD00A6FFCB /* RNCryptor */,
 				D29666691AF10BB2001828A1 /* Client */,
 			);
 			path = SocketClusteriOS;
@@ -155,29 +136,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D2F271531AF917DD00A6FFCB /* RNCryptor */ = {
-			isa = PBXGroup;
-			children = (
-				D2F271621AF91B6D00A6FFCB /* RNCryptor-Prefix.pch */,
-				D2F271631AF91B6D00A6FFCB /* RNCryptor.h */,
-				D2F271641AF91B6D00A6FFCB /* RNCryptor.m */,
-				D2F271651AF91B6D00A6FFCB /* RNCryptor+Private.h */,
-				D2F271661AF91B6D00A6FFCB /* RNCryptorEngine.h */,
-				D2F271671AF91B6D00A6FFCB /* RNCryptorEngine.m */,
-				D2F271681AF91B6D00A6FFCB /* RNDecryptor.h */,
-				D2F271691AF91B6D00A6FFCB /* RNDecryptor.m */,
-				D2F2716A1AF91B6D00A6FFCB /* RNEncryptor.h */,
-				D2F2716B1AF91B6D00A6FFCB /* RNEncryptor.m */,
-				D2F2716C1AF91B6D00A6FFCB /* RNOpenSSLCryptor.h */,
-				D2F2716D1AF91B6D00A6FFCB /* RNOpenSSLCryptor.m */,
-				D2F2716E1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.h */,
-				D2F2716F1AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m */,
-				D2F271701AF91B6D00A6FFCB /* RNOpenSSLEncryptor.h */,
-				D2F271711AF91B6D00A6FFCB /* RNOpenSSLEncryptor.m */,
-			);
-			path = RNCryptor;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -217,7 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */;
 			buildPhases = (
-				D27D33161AF8FD890023281B /* ShellScript */,
+				D26E9AD81AFF8578004D6E55 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +222,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D26E9AD81AFF8578004D6E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26E9AD91AFF857F004D6E55 /* WebViewJavascriptBridge.js.txt in Resources */,
+				D26E9ADA1AFF8581004D6E55 /* socketcluster-webwrapper.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2C1F9EB1AF51D6F00DB318F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,35 +241,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D27D33161AF8FD890023281B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "openssl enc -e -aes-256-cbc -pass pass:4mU9pP8a757mgsMG -in $PROJECT_DIR/SocketClusteriOS/WebViewJavascriptBridge.js.txt -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/WebViewJavascriptBridge.enc\nopenssl enc -e -aes-256-cbc -pass pass:4mU9pP8a757mgsMG -in $PROJECT_DIR/SocketClusteriOS/socketcluster-webwrapper.html -out $TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/socketcluster-webwrapper.enc";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D29666421AF0F8E5001828A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D2C1F9E61AF5164200DB318F /* WebViewJavascriptBridge.m in Sources */,
-				D2B8814F1AFCF0B70059FBF9 /* RNCryptor.m in Sources */,
-				D2F271731AF91B6D00A6FFCB /* RNCryptorEngine.m in Sources */,
-				D2B881501AFCF0C10059FBF9 /* RNEncryptor.m in Sources */,
-				D2F271741AF91B6D00A6FFCB /* RNDecryptor.m in Sources */,
-				D2F271771AF91B6D00A6FFCB /* RNOpenSSLDecryptor.m in Sources */,
-				D2B881521AFCF0C70059FBF9 /* RNOpenSSLEncryptor.m in Sources */,
-				D2B881511AFCF0C30059FBF9 /* RNOpenSSLCryptor.m in Sources */,
+				D26E9AD71AFF84FC004D6E55 /* README.md in Sources */,
 				D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

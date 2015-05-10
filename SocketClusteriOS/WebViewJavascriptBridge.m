@@ -7,8 +7,6 @@
 //
 
 #import "WebViewJavascriptBridge.h"
-#import "RNDecryptor.h"
-#import "RNOpenSSLDecryptor.h"
 
 #if __has_feature(objc_arc_weak)
     #define WVJB_WEAK __weak
@@ -346,13 +344,8 @@ static bool logging = false;
     
     if (_numRequestsLoading == 0 && ![[webView stringByEvaluatingJavaScriptFromString:@"typeof WebViewJavascriptBridge == 'object'"] isEqualToString:@"true"]) {
         NSBundle *bundle = _resourceBundle ? _resourceBundle : [NSBundle mainBundle];
-        NSString *filePath = [bundle pathForResource:@"WebViewJavascriptBridge" ofType:@"enc"];
-        NSData *passEncryptedData =[[NSData alloc] initWithContentsOfFile:filePath];
-        NSError *error;
-        NSData *decryptedData = [RNOpenSSLDecryptor decryptData:passEncryptedData withSettings:kRNCryptorAES256Settings password:@"4mU9pP8a757mgsMG" error:&error];
-        NSString * js = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
-
-//        NSString *js = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        NSString *filePath = [bundle pathForResource:@"WebViewJavascriptBridge" ofType:@"txt"];
+        NSString *js = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
         [webView stringByEvaluatingJavaScriptFromString:js];
     }
     
