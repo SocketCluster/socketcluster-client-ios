@@ -16,7 +16,7 @@ The project is in beta.
   
 ### Connect to host
 
-	``[socketCluster connectToHost:@"127.0.0.1" onPort:8000 securly:NO];``
+  ``[socketCluster connectToHost:@"127.0.0.1" onPort:8000 securly:NO];``
 	
 ### Disconnect to host
 
@@ -31,7 +31,7 @@ The project is in beta.
 Make sure you have implemented protocol ``<SocketClusterDelegate>``
 
 ```
-  - (void)socketClusterReceivedEvent:(NSString *)eventName WithData:(NSDictionary *)data;
+- (void)socketClusterReceivedEvent:(NSString *)eventName WithData:(NSDictionary *)data;
 {
     if ([@"rand" isEqualToString:eventName]) {
         NSArray *positiveFaces = @[@";p", @":D", @":)", @":3", @";)"];
@@ -64,7 +64,7 @@ Make sure you have implemented protocol ``<SocketClusterDelegate>``
 Make sure you have implemented protocol ``<SocketClusterDelegate>``
 
   ```
-  - (void)socketclusterChannelReceivedEvent:(NSString *)channel WithData:(NSDictionary *)data
+- (void)socketclusterChannelReceivedEvent:(NSString *)channel WithData:(NSDictionary *)data
 {
     if ([@"pong" isEqualToString:channel]) {
         [self logMessage:[NSString stringWithFormat:@"Channel %@ received message %@", channel, data[@"data"]]];
