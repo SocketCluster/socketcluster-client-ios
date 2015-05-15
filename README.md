@@ -5,19 +5,41 @@ The project is in beta.
 
 ### Setup
 
+#### Cocoapods
+
+**Podfile**
+
+```
+platform :ios, '8.0'
+
+pod 'SocketClusteriOS', '0.2.1'
+```
+
+Run ``pod install``, you are all set.
+
+Notice: Do you use ``use_frameworks!`` in Podfile, it will put the bundle in frameworks folder to cause incorrect path issue. If you need to use this, please consider to send a pull request.
+
+### Subproject
+
+1. Drag this project into your project as subproject
+2. Setup this project as build dependency
+3. Import the header files ``#import <SocketClusteriOS/SocketCluster.h>``
+
+### Static Library
+
 1. Add ``libSocketClusteriOS.a``, ``SocketCluster.h`` and ``SocketClusterDelegate.h`` and ``SocketClusteriOSBundle.bundle`` to your project.
 2. Import the module by ``#import <SocketClusteriOS/SocketCluster.h>``
 3. In the header file, confront to the protocol ``<SocketClusterDelegate>``, eg. ``@interface ViewController : UIViewController <SocketClusterDelegate>``
 4. Initialize the module and set the delegate to self.
-	```
-	    SocketCluster *sc = [[SocketCluster alloc] init];
-    	sc.delegate = self;	//Self 
+  ```
+      SocketCluster *sc = [[SocketCluster alloc] init];
+      sc.delegate = self; //Self 
     ```
   
 ### Connect to host
 
   ``[socketCluster connectToHost:@"127.0.0.1" onPort:8000 securly:NO];``
-	
+  
 ### Disconnect to host
 
   ``[socketCluster disconnect];``
