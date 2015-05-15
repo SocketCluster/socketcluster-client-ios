@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D26E9AD71AFF84FC004D6E55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D26E9AD61AFF84FB004D6E55 /* README.md */; };
+		D28A6AD01B06099B00136600 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */; };
+		D28A6AD11B06099F00136600 /* socketcluster-webwrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */; };
 		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
 		D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
@@ -17,8 +19,21 @@
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D28A6AD21B0609A900136600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D296663E1AF0F8E5001828A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D28A6AC81B06098400136600;
+			remoteInfo = SocketClusteriOSBundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D26E9AD61AFF84FB004D6E55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D28A6AC11B06095B00136600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28A6AC91B06098400136600 /* SocketClusteriOSBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketClusteriOSBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28A6ACC1B06098400136600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketClusteriOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29666571AF0F8E5001828A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "socketcluster-webwrapper.html"; sourceTree = "<group>"; };
@@ -46,6 +61,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D28A6ABF1B06095B00136600 /* SocketClusteriOSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D28A6AC01B06095B00136600 /* Supporting Files */,
+			);
+			path = SocketClusteriOSBundle;
+			sourceTree = "<group>";
+		};
+		D28A6AC01B06095B00136600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D28A6AC11B06095B00136600 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D28A6ACA1B06098400136600 /* SocketClusteriOSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D28A6ACB1B06098400136600 /* Supporting Files */,
+			);
+			path = SocketClusteriOSBundle;
+			sourceTree = "<group>";
+		};
+		D28A6ACB1B06098400136600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D28A6ACC1B06098400136600 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D296663D1AF0F8E5001828A1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +102,8 @@
 				D29666481AF0F8E5001828A1 /* SocketClusteriOS */,
 				D29666551AF0F8E5001828A1 /* SocketClusteriOSTests */,
 				D2C1F9F21AF51F4700DB318F /* SocketClusteriOSBundle */,
+				D28A6ABF1B06095B00136600 /* SocketClusteriOSBundle */,
+				D28A6ACA1B06098400136600 /* SocketClusteriOSBundle */,
 				D29666471AF0F8E5001828A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */,
+				D28A6AC91B06098400136600 /* SocketClusteriOSBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +187,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D28A6AC81B06098400136600 /* SocketClusteriOSBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D28A6ACD1B06098400136600 /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */;
+			buildPhases = (
+				D28A6AC71B06098400136600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketClusteriOSBundle;
+			productName = SocketClusteriOSBundle;
+			productReference = D28A6AC91B06098400136600 /* SocketClusteriOSBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D29666451AF0F8E5001828A1 /* SocketClusteriOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D296665A1AF0F8E5001828A1 /* Build configuration list for PBXNativeTarget "SocketClusteriOS" */;
@@ -150,6 +215,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D28A6AD31B0609A900136600 /* PBXTargetDependency */,
 			);
 			name = SocketClusteriOS;
 			productName = SocketClusteriOS;
@@ -165,6 +231,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = TopCloud;
 				TargetAttributes = {
+					D28A6AC81B06098400136600 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					D29666451AF0F8E5001828A1 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -183,11 +252,21 @@
 			projectRoot = "";
 			targets = (
 				D29666451AF0F8E5001828A1 /* SocketClusteriOS */,
+				D28A6AC81B06098400136600 /* SocketClusteriOSBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D28A6AC71B06098400136600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D28A6AD01B06099B00136600 /* WebViewJavascriptBridge.js.txt in Resources */,
+				D28A6AD11B06099F00136600 /* socketcluster-webwrapper.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2C1F9EB1AF51D6F00DB318F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,7 +305,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D28A6AD31B0609A900136600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D28A6AC81B06098400136600 /* SocketClusteriOSBundle */;
+			targetProxy = D28A6AD21B0609A900136600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D28A6ACE1B06098400136600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D28A6ACF1B06098400136600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		D29666581AF0F8E5001828A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,6 +460,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D28A6ACD1B06098400136600 /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D28A6ACE1B06098400136600 /* Debug */,
+				D28A6ACF1B06098400136600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D29666411AF0F8E5001828A1 /* Build configuration list for PBXProject "SocketClusteriOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
