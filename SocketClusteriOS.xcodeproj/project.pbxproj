@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D26E9AD71AFF84FC004D6E55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D26E9AD61AFF84FB004D6E55 /* README.md */; };
-		D26E9AD91AFF857F004D6E55 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */; };
-		D26E9ADA1AFF8581004D6E55 /* socketcluster-webwrapper.html in Resources */ = {isa = PBXBuildFile; fileRef = D296666A1AF10BC4001828A1 /* socketcluster-webwrapper.html */; };
 		D296666F1AF10C69001828A1 /* SocketCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = D296666D1AF10C69001828A1 /* SocketCluster.m */; };
 		D29666701AF10CA0001828A1 /* SocketCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666C1AF10C69001828A1 /* SocketCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D29666AF1AF11112001828A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29666AE1AF11112001828A1 /* UIKit.framework */; };
@@ -17,18 +15,7 @@
 		D2C1F9E71AF5174C00DB318F /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */; };
 		D2C1F9E81AF5174C00DB318F /* SocketClusterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D296666E1AF10C69001828A1 /* SocketClusterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2C1F9FE1AF5203500DB318F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */; };
-		D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D2C1F9F91AF51F7800DB318F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D296663E1AF0F8E5001828A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2C1F9F01AF51F4700DB318F;
-			remoteInfo = SocketClusteriOSBundle;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D26E9AD61AFF84FB004D6E55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -42,7 +29,6 @@
 		D2C1F9E31AF5164200DB318F /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		D2C1F9E41AF5164200DB318F /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		D2C1F9E51AF5164200DB318F /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
-		D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketClusteriOSBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C1F9F41AF51F4700DB318F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C1F9FD1AF5203500DB318F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -77,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */,
-				D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,27 +150,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				D2C1F9FA1AF51F7800DB318F /* PBXTargetDependency */,
 			);
 			name = SocketClusteriOS;
 			productName = SocketClusteriOS;
 			productReference = D29666461AF0F8E5001828A1 /* libSocketClusteriOS.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */;
-			buildPhases = (
-				D26E9AD81AFF8578004D6E55 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SocketClusteriOSBundle;
-			productName = SocketClusteriOSBundle;
-			productReference = D2C1F9F11AF51F4700DB318F /* SocketClusteriOSBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,9 +166,6 @@
 				ORGANIZATIONNAME = TopCloud;
 				TargetAttributes = {
 					D29666451AF0F8E5001828A1 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					D2C1F9F01AF51F4700DB318F = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -217,26 +183,15 @@
 			projectRoot = "";
 			targets = (
 				D29666451AF0F8E5001828A1 /* SocketClusteriOS */,
-				D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D26E9AD81AFF8578004D6E55 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D26E9AD91AFF857F004D6E55 /* WebViewJavascriptBridge.js.txt in Resources */,
-				D26E9ADA1AFF8581004D6E55 /* socketcluster-webwrapper.html in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2C1F9EB1AF51D6F00DB318F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C1F9FF1AF5203E00DB318F /* SocketClusteriOSBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,14 +225,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2C1F9FA1AF51F7800DB318F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2C1F9F01AF51F4700DB318F /* SocketClusteriOSBundle */;
-			targetProxy = D2C1F9F91AF51F7800DB318F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D29666581AF0F8E5001828A1 /* Debug */ = {
@@ -389,39 +336,6 @@
 			};
 			name = Release;
 		};
-		D2C1F9F61AF51F4700DB318F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos8.3;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		D2C1F9F71AF51F4700DB318F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SocketClusteriOSBundle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos8.3;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,15 +353,6 @@
 			buildConfigurations = (
 				D296665B1AF0F8E5001828A1 /* Debug */,
 				D296665C1AF0F8E5001828A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2C1F9F51AF51F4700DB318F /* Build configuration list for PBXNativeTarget "SocketClusteriOSBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2C1F9F61AF51F4700DB318F /* Debug */,
-				D2C1F9F71AF51F4700DB318F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

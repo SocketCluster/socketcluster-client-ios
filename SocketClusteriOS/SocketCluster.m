@@ -28,7 +28,7 @@
 {
     if (self = [super init]) {
         _webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"SocketClusteriOSBundle" withExtension:@"bundle"]];        
+        NSBundle *bundle = [NSBundle mainBundle];
         NSString* htmlPath = [bundle pathForResource:@"socketcluster-webwrapper" ofType:@"html"];
         NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
         NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
