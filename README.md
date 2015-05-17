@@ -18,7 +18,7 @@ pod 'SocketClusteriOS', '0.2.2'
 
 Run ``pod install``, you are all set.
 
-Notice: Do you use ``use_frameworks!`` in Podfile, it will put the bundle in frameworks folder to cause incorrect path issue. If you need to use this, please consider to send a pull request.
+Notice: Do not use ``use_frameworks!`` in Podfile, it will put the bundle in frameworks folder to cause incorrect path issue. If you need to use this, please consider to send a pull request.
 
 ### Subproject
 
