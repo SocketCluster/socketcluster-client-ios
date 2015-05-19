@@ -12,7 +12,7 @@ The project is in beta.
 ```
 platform :ios, '8.0'
  
-pod 'SocketClusteriOS', '0.2.2'
+pod 'SocketClusteriOS', '0.3'
 
 ```
 
