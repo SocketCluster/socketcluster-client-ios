@@ -50,8 +50,8 @@
         }];
         
         [self.bridge registerHandler:@"onErrorHandler" handler:^(id data, WVJBResponseCallback responseCallback){
-            if ([self.delegate respondsToSelector:@selector(socketClusterOnError)]){
-                [self.delegate socketClusterOnError];
+            if ([self.delegate respondsToSelector:@selector(socketClusterOnError:)]){
+                [self.delegate socketClusterOnError:data[@"data"]];
             }
         }];
         

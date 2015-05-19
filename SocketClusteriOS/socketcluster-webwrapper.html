@@ -41,9 +41,7 @@
   	    });
         scProxy.removeAllListeners('error');
         scProxy.on('error', function (err) {
-            bridge.callHandler('onErrorHandler', {
-            	error: err
-            }, function(response) {});
+            bridge.callHandler('onErrorHandler', {'data': err.message}, function(response) {});
         });
         scProxy.removeAllListeners('connect');
         scProxy.on('connect', function () {
