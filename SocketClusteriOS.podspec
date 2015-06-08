@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SocketClusteriOS"
-  s.version      = "0.3"
+  s.version      = "0.3.1"
   s.summary      = "Official SocketCluster iOS Client (Beta)"
 
   s.description  = <<-DESC
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/TopCloud/socketcluster-client-ios.git", :tag => "releases/0.3" }
+  s.source       = { :git => "https://github.com/TopCloud/socketcluster-client-ios.git", :tag => "releases/0.3.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
