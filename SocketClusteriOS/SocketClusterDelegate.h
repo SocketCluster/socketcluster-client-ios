@@ -18,7 +18,6 @@
 - (void)socketClusterDidConnect;
 - (void)socketClusterDidDisconnect;
 - (void)socketClusterOnError:(NSString *)error;
-- (void)socketClusterOnStatusChange;
 - (void)socketClusterOnKickOut;
 - (void)socketClusterOnSubscribe;
 - (void)socketClusterOnSubscribeFail;
