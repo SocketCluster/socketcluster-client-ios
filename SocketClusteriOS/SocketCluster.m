@@ -55,12 +55,6 @@
             }
         }];
         
-        [self.bridge registerHandler:@"onStatusHandler" handler:^(id data, WVJBResponseCallback responseCallback){
-            if ([self.delegate respondsToSelector:@selector(socketClusterOnStatusChange)]){
-                [self.delegate socketClusterOnStatusChange];
-            }
-        }];
-        
         [self.bridge registerHandler:@"onKickoutHandler" handler:^(id data, WVJBResponseCallback responseCallback){
             if ([self.delegate respondsToSelector:@selector(socketClusterOnKickOut)]){
                 [self.delegate socketClusterOnKickOut];
