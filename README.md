@@ -1,7 +1,7 @@
 # socketcluster-client-ios
 Native iOS client for SocketCluster
 
-The project is in beta.
+The project is in beta. If you have issues with this client, there are others to choose from: https://github.com/socketcluster/client-drivers#list-of-clients
 
 ### Setup
 
